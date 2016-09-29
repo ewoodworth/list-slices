@@ -30,7 +30,7 @@ def head(input_list):
 
     """
 
-    return input_list[:1]
+    return input_list[0]
 
 
 def tail(input_list):
@@ -72,7 +72,7 @@ def init(input_list):
 
     """
 
-    return []
+    return input_list[:-1]
 
 
 ##############################################################################
@@ -91,7 +91,7 @@ def first_three(input_list):
 
     """
 
-    return []
+    return input_list[:3]
 
 
 def last_five(input_list):
