@@ -165,7 +165,7 @@ def replace_head(input_list):
 
     """
 
-    input_list[0]=42
+    input_list[0] = 42
 
 
 def replace_third_and_last(input_list):
@@ -182,8 +182,7 @@ def replace_third_and_last(input_list):
 
     """
 
-    input_list[2] = 37
-    input_list[-1] = 37
+    input_list[2], input_list[-1] = 37, 37
 
 
 def replace_middle(input_list):
@@ -215,8 +214,9 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-
-    pass
+ 
+    del input_list[6], input_list[2]
+    
 
 
 def delete_middle(input_list):
@@ -233,7 +233,7 @@ def delete_middle(input_list):
 
     """
 
-    pass
+    del input_list[2:-2]
 
 
 ##############################################################################
@@ -246,4 +246,4 @@ if __name__ == "__main__":
     import doctest
     result = doctest.testmod()
     if result.failed == 0:
-        print "ALL TESTS PASSED"
+        print "ALL TESTS PASSED - YOU ROCK!"
